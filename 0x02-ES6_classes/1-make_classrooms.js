@@ -7,3 +7,4 @@ function initializeRooms() {
     new Classroom(34),
   ];
 }
+export default initializeRooms;
