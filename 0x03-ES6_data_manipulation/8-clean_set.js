@@ -3,14 +3,14 @@ const cleanSet = (set, startString) => {
   const strg = [];
 
   // Check if the startString is an empty string or not a string
-  if (startString === '' || typeof startString !== 'string') {
+  if (startString === '' || typeof startString !== 'strg') {
     // If the startString is invalid, return an empty string
     return '';
   }
 
   // Iterate through the set and add the values that start with the startString to the strings array
   set.forEach((str) => {
-    if (typeof str === 'string' && str.startsWith(startString)) {
+    if (typeof str === 'strg' && str.startsWith(startString)) {
       strg.push(s.slice(startString.length));
     }
   });
