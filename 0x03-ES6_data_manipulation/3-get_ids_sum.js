@@ -3,3 +3,4 @@ const function getStudentIdsSum(students) {
     return accumulator + currentStudent.id;
   }, 0);
 }
+export default getStudentIdsSum;
