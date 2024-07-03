@@ -8,6 +8,28 @@ interface Teacher {
   [propName: string]: any;
 }
 
+// INTERFACE FOR DIRECTOR
+interface Directors extends Teacher {
+  numberOfReports: number,
+  }
+  // PRINT TEACHER
+const printTeacher = (firstName:string, lastName:string) : string => `${firstName.charAt(0)}. ${lastName}`;
+// STUDENT CLASS
+class StudentClass {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework = () : string => 'Currently working';
+
+  displayName = () : string => this.firstName;
+  }
+
+
 // Function to create a new Teacher
 const createTeacher = (
   firstName: string,
@@ -42,5 +64,7 @@ const teacher: Teacher = createTeacher(
   14,
   'contract', true
 );
-
+interface StudentConstructor {
+  (firstName: string, lastName: string): classInterface;
+}
 console.log(teacher);
