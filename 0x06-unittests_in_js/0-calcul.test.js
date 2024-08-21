@@ -3,34 +3,34 @@ const calculateNumber = require('./0-calcul');
 
 describe('calculateNumber', () => {
   it('floating point whole numbers', () => {
-    assert.strictEqual(calculateNumber(5.0, 7.0), 12);
+    assert.strictEqual(calculateNumber(3.0, 2.0), 5);
   });
 
   it('rounding down b\'s floating point fractional number', () => {
-    assert.strictEqual(calculateNumber(5.0, 7.4), 12);
+    assert.strictEqual(calculateNumber(3.0, 2.3), 5);
   });
 
   it('rounding down a and b\'s floating point fractional number', () => {
-    assert.strictEqual(calculateNumber(6.4, 7.4), 13);
+    assert.strictEqual(calculateNumber(1.4, 2.4), 3);
   });
 
   it('rounding down a\'s floating point fractional number', () => {
-    assert.strictEqual(calculateNumber(6.4, 7.0), 13);
+    assert.strictEqual(calculateNumber(1.4, 2.0), 3);
   });
 
   it('rounding up b\'s floating point fractional numbers', () => {
-    assert.strictEqual(calculateNumber(5.0, 7.5), 13);
+    assert.strictEqual(calculateNumber(1.0, 2.5), 4);
   });
 
   it('rounding up a and b\'s floating point fractional numbers', () => {
-    assert.strictEqual(calculateNumber(8.6, 7.5), 16);
+    assert.strictEqual(calculateNumber(2.6, 2.5), 6);
   });
 
   it('rounding up a\'s floating point fractional numbers', () => {
-    assert.strictEqual(calculateNumber(8.6, 7.0), 16);
+    assert.strictEqual(calculateNumber(2.6, 2.0), 5);
   });
 
   it('rounding down a and b floating point fractional numbers with trailing 9\'s', () => {
-    assert.strictEqual(calculateNumber(7.499999, 10.499999), 17);
+    assert.strictEqual(calculateNumber(2.499999, 3.499999), 5);
   });
 });
