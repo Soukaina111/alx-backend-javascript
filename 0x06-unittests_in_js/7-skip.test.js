@@ -9,27 +9,27 @@ describe('Testing numbers', () => {
     expect(2 === 2).to.be.true;
   });
 
-  it.skip('11 is equal to 31', () => {
-    expect(11 === 31).to.be.true;
+  it.skip('1 is equal to 3', () => {
+    expect(1 === 3).to.be.true;
   });
 
-  it('32 is equal to 32', () => {
-    expect(32 === 32).to.be.true;
+  it('3 is equal to 3', () => {
+    expect(3 === 3).to.be.true;
   });
 
-  it('24 is equal to 24', () => {
-    expect(24 === 24).to.be.true;
+  it('4 is equal to 4', () => {
+    expect(4 === 4).to.be.true;
   });
 
-  it('53 is equal to 53', () => {
-    expect(53 === 53).to.be.true;
+  it('5 is equal to 5', () => {
+    expect(5 === 5).to.be.true;
   });
 
-  it('61 is equal to 61', () => {
-    expect(61 === 61).to.be.true;
+  it('6 is equal to 6', () => {
+    expect(6 === 6).to.be.true;
   });
 
-  it('17 is equal to 17', () => {
-    expect(17 === 17).to.be.true;
+  it('7 is equal to 7', () => {
+    expect(7 === 7).to.be.true;
   });
 });
